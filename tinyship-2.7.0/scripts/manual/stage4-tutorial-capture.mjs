@@ -67,12 +67,12 @@ async function captureClip(name, elements, padding = 16, minHeight = 300) {
   images.push({ name, width: clip.width, height: clip.height })
 }
 await captureClip('01-choose-photo.png', [blocks.nth(0)])
-await captureClip('02-dance-setting.png', [blocks.nth(1), blocks.nth(2)])
+await captureClip('02-dance-setting.png', [blocks.nth(1)])
 await page.getByRole('checkbox', { name: 'I have permission to use the photos I upload.' }).check()
 await page.getByRole('button', { name: 'Generate video', exact: true }).click()
 await page.getByRole('status').filter({ hasText: 'Generating your dance video' }).waitFor()
 const resultPanel = maker.locator(':scope > div').last()
-await captureClip('03-generate-video.png', [blocks.nth(3), resultPanel.locator('[role=status]')], 18)
+await captureClip('03-generate-video.png', [blocks.nth(2)], 18)
 completed = true
 await page.getByRole('status').filter({ hasText: 'Your video is ready.' }).waitFor({ timeout: 20000 })
 await captureClip('04-download-video.png', [resultPanel.locator('[role=status]'), resultPanel.locator(':scope > div').last()], 18)

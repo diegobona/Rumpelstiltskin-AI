@@ -3,7 +3,7 @@ import { aiVideoConfig } from '../../../../config/aiVideo'
 import { RUMPELSTILTSKIN_DANCE_PROMPT } from './dance-prompt'
 
 export const DANCE_REFERENCE_KEYS = {
-  princess: 'references/rumpelstiltskin-v2/princess-default.png',
+  princess: 'references/rumpelstiltskin-v2/princess-default-v2.png',
   scene: 'references/rumpelstiltskin-v2/barn-scene.png',
 } as const
 

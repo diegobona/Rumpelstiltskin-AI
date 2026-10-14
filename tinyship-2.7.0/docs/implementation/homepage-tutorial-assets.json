@@ -1,0 +1,46 @@
+[
+  {
+    "name": "step-upload",
+    "prompt": "Use case: ads-marketing. Create one finished landscape 3:2 tutorial illustration for a Rumpelstiltskin AI photo-to-video website. Premium photographic editorial collage, realistic photo subjects and tactile off-white photo borders, ivory #fffdf7 background, muted forest-green accents #2d483b, soft natural shadows, warm golden straw details, restrained elegant design. Clear large subjects that read at a 260px card width. A fictional adult dark-haired man in a navy tailcoat, white shirt and black bow tie is the dancer; the princess is a fictional adult blonde woman in an ivory period dress. No real celebrities. No text, letters, labels, numerals, logos or watermarks, no browser chrome, no gray placeholder shapes. Do not create multiple panels or a contact sheet. The upload step: one large upright photographic print of the dancer standing naturally, head to shoes fully visible against a plain warm studio backdrop, laid diagonally on an ivory tabletop. A subtle forest-green circular upward arrow badge overlaps the lower right of the print. The photo is the main subject, face crisp, hands natural, generous but not excessive breathing room. The overall composition communicates selecting one clear full-body photo.",
+    "tool": "Built-in image_gen",
+    "source": "C:\\Users\\zhouw\\.codex\\generated_images\\01a137e1-7652-74f2-a6ad-8cf50442817b\\exec-60c3c187-1e1c-4ec8-bbb0-f360e2289ba9.png",
+    "savedPath": "D:/Asideproject/！Overseas网站项目/rumpelstiltskin-ai.co/tinyship-2.7.0/apps/tanstack-app/public/images/dance/step-upload.png",
+    "webDimensions": {
+      "width": 960,
+      "height": 640
+    }
+  },
+  {
+    "name": "step-cast",
+    "prompt": "Use case: ads-marketing. Create one finished landscape 3:2 tutorial illustration for a Rumpelstiltskin AI photo-to-video website. Premium photographic editorial collage, realistic photo subjects and tactile off-white photo borders, ivory #fffdf7 background, muted forest-green accents #2d483b, soft natural shadows, warm golden straw details, restrained elegant design. Clear large subjects that read at a 260px card width. A fictional adult dark-haired man in a navy tailcoat, white shirt and black bow tie is the dancer; the princess is a fictional adult blonde woman in an ivory period dress. No real celebrities. No text, letters, labels, numerals, logos or watermarks, no browser chrome, no gray placeholder shapes. Do not create multiple panels or a contact sheet. The casting step: two overlapping photographic prints on an ivory tabletop. The larger foremost print shows the blonde princess head and shoulders, a softly blurred warm straw backdrop; the smaller print behind shows the dark-haired dancer in his navy tailcoat. A small forest-green check badge sits at the corner of the princess print. Both faces clearly visible and attractively composed, a few straw strands at the outside edge. Communicate choosing the optional second character.",
+    "tool": "Built-in image_gen",
+    "source": "C:\\Users\\zhouw\\.codex\\generated_images\\01a137e1-7652-74f2-a6ad-8cf50442817b\\exec-bcc51506-7d15-46ce-a047-17a160a70dda.png",
+    "savedPath": "D:/Asideproject/！Overseas网站项目/rumpelstiltskin-ai.co/tinyship-2.7.0/apps/tanstack-app/public/images/dance/step-cast.png",
+    "webDimensions": {
+      "width": 960,
+      "height": 640
+    }
+  },
+  {
+    "name": "step-generate",
+    "prompt": "Use case: ads-marketing. Create one finished landscape 3:2 tutorial illustration for a Rumpelstiltskin AI photo-to-video website. Premium photographic editorial collage, realistic photo subjects and tactile off-white photo borders, ivory #fffdf7 background, muted forest-green accents #2d483b, soft natural shadows, warm golden straw details, restrained elegant design. Clear large subjects that read at a 260px card width. A fictional adult dark-haired man in a navy tailcoat, white shirt and black bow tie is the dancer; the princess is a fictional adult blonde woman in an ivory period dress. No real celebrities. No text, letters, labels, numerals, logos or watermarks, no browser chrome, no gray placeholder shapes. Do not create multiple panels or a contact sheet. The generation step: a large landscape film still with a refined ivory frame, showing the dancer FULL BODY tiptoe prancing, knees bent, elbows outward, mischievous grin, in a compact warm straw corner with a dark recess on the left; the blonde princess sits at the far right edge in her ivory dress. Below the still, a slim forest-green progress line and a small understated cluster of three glints convey rendering. Film scene takes most of the image, realistic anatomy, soft vintage film grain. Clearly an illustrative workflow visual, no text or numeric progress.",
+    "tool": "Built-in image_gen",
+    "source": "C:\\Users\\zhouw\\.codex\\generated_images\\01a137e1-7652-74f2-a6ad-8cf50442817b\\exec-598bb21c-aa67-4ac8-a006-94f8e6dc7aae.png",
+    "savedPath": "D:/Asideproject/！Overseas网站项目/rumpelstiltskin-ai.co/tinyship-2.7.0/apps/tanstack-app/public/images/dance/step-generate.png",
+    "webDimensions": {
+      "width": 960,
+      "height": 640
+    }
+  },
+  {
+    "name": "step-download",
+    "prompt": "Use case: ads-marketing. Create one finished landscape 3:2 tutorial illustration for a Rumpelstiltskin AI photo-to-video website. Premium photographic editorial collage, realistic photo subjects and tactile off-white photo borders, ivory #fffdf7 background, muted forest-green accents #2d483b, soft natural shadows, warm golden straw details, restrained elegant design. Clear large subjects that read at a 260px card width. A fictional adult dark-haired man in a navy tailcoat, white shirt and black bow tie is the dancer; the princess is a fictional adult blonde woman in an ivory period dress. No real celebrities. No text, letters, labels, numerals, logos or watermarks, no browser chrome, no gray placeholder shapes. Do not create multiple panels or a contact sheet. The download step: a modern unbranded dark forest-green smartphone standing upright at a gentle angle on an ivory surface. Its screen shows a crisp realistic FULL BODY film still of the dark-haired dancer in the straw corner with the princess seated at the side, subtle triangular play glyph centered. A prominent but elegant green circular downward-arrow download badge overlaps the lower right of the phone, soft shadow underneath. Warm cinematic screen contrasts with the clean ivory scene. Communicate the finished clip ready to save and share.",
+    "tool": "Built-in image_gen",
+    "source": "C:\\Users\\zhouw\\.codex\\generated_images\\01a137e1-7652-74f2-a6ad-8cf50442817b\\exec-ffce3675-cbb0-406e-a7c0-4f5306fb7c7e.png",
+    "savedPath": "D:/Asideproject/！Overseas网站项目/rumpelstiltskin-ai.co/tinyship-2.7.0/apps/tanstack-app/public/images/dance/step-download.png",
+    "webDimensions": {
+      "width": 960,
+      "height": 640
+    }
+  }
+]

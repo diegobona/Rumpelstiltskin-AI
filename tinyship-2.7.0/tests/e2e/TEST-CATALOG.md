@@ -1,5 +1,17 @@
 # E2E 测试流程目录
 
+## Default princess restoration (2026-10-14)
+
+Acceptance: preserve the existing princess identity and expression, improve clarity, remove player overlays, and use the same restored asset in the maker, public examples and AutoDL's default reference. Keep old files available for rollback; use a versioned URL to avoid stale browser/CDN caches.
+
+Verified: edited 1589x990 PNG inspected for retained identity and removed overlays. R2 public GET returned 200 with identical bytes/SHA-256 (test-results/princess-reference-r2.json). Typecheck, Cloudflare build, 8 existing maker/template unit tests and 7 homepage/maker E2E checks passed. Browser confirmed both preview/example images loaded the new version. Updated the tutorial screenshots with mocked generation, zero paid jobs. Page evidence: test-results/princess-reference-page.png; edit prompt: docs/implementation/princess-reference-edit.json.
+
+## Compact maker and generated tutorial art (2026-10-14)
+
+Acceptance: remove the display-only "Your dance setting" block from the shared maker; preserve photo inputs and generation/download controls; keep the player compact instead of stretching to the form height; serve four generated tutorial illustrations with alt text and SSR copy; align the tutorial instructions and screenshots with the remaining controls.
+
+Verified: TanStack typecheck and Cloudflare production build passed; 2 maker SSR tests and 10 homepage/maker/content-page E2E checks passed. Browser review confirmed the removed panel, a compact 16:9 player, all four generated 960x640 PNG illustrations loaded, and no horizontal overflow at 390px. Tutorial screenshots were recaptured with mocked generation (zero paid jobs). Evidence: test-results/homepage-tutorial-desktop.png, test-results/homepage-tutorial-mobile.png and test-results/stage4-tutorial-capture.json. Image prompts and saved paths: docs/implementation/homepage-tutorial-assets.json.
+
 ## Local preview R2 upload regression (2026-10-14)
 
 Acceptance: the proxy-aware local preview forwards a WebSocket upgrade and frames instead of sending them through ordinary fetch; a real anonymous upload reaches the configured R2 bucket and its returned image URL is readable; failed upload creates no video task and consumes no trial. Do not submit another paid video job during diagnosis. Keep the user's selected photos intact.

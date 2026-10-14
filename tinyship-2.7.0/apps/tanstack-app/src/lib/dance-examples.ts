@@ -13,7 +13,7 @@ export const danceExamples = {
     {
       title: 'Keep or replace the princess',
       body: 'This is a still character reference, not a playable preview. Keep the included princess or replace her by adding a photo of one person in the optional princess field.',
-      image: '/images/references/princess-default.png',
+      image: '/images/references/princess-default-v2.png',
       alt: 'Included blonde princess reference with a frightened expression and a hand near her mouth',
       kind: 'Included reference',
     },

@@ -34,11 +34,6 @@ export interface DanceMakerCopy {
   princessPreviewAlt: string
   defaultPrincessAlt: string
   defaultPrincessLabel: string
-  sceneLabel: string
-  sceneHint: string
-  sceneAlt: string
-  costumeLabel: string
-  costumeHint: string
   generateButton: string
   retryGenerate: string
   retryStatus: string
@@ -369,7 +364,7 @@ export function DanceMaker({ copy, isAvailable = true, className = '', returnTo 
         <div className="space-y-3">
           <label htmlFor={`${id}-princess`} className="block text-base font-semibold">{copy.princessLabel}</label>
           <div className="flex flex-col items-center gap-4 rounded-2xl border bg-muted/35 p-4 sm:flex-row">
-            <img src={princessPreviewUrl ?? '/images/references/princess-default.png'} alt={princessPreviewUrl ? copy.princessPreviewAlt : copy.defaultPrincessAlt} width={300} height={300} className="h-28 w-28 shrink-0 rounded-xl object-cover" />
+            <img src={princessPreviewUrl ?? '/images/references/princess-default-v2.png'} alt={princessPreviewUrl ? copy.princessPreviewAlt : copy.defaultPrincessAlt} width={300} height={300} className="h-28 w-28 shrink-0 rounded-xl object-cover" />
             <div className="min-w-0 space-y-2 text-center sm:text-left">
               <p className="truncate text-sm text-muted-foreground">{princessPhoto?.name ?? copy.defaultPrincessLabel}</p>
               <Button type="button" variant="outline" onClick={() => princessInputRef.current?.click()} disabled={referencesLocked}>
@@ -380,18 +375,6 @@ export function DanceMaker({ copy, isAvailable = true, className = '', returnTo 
             </div>
           </div>
           <p id={`${id}-princess-hint`} className="text-sm leading-relaxed text-muted-foreground">{copy.princessHint}</p>
-        </div>
-
-        <div className="space-y-3 rounded-2xl border p-4">
-          <p className="text-base font-semibold">{copy.sceneLabel}</p>
-          <div className="flex flex-col items-start gap-3 sm:flex-row">
-            <img src="/images/references/barn-scene.png" alt={copy.sceneAlt} width={1672} height={941} className="aspect-video w-full shrink-0 rounded-xl object-cover sm:w-40" />
-            <p className="text-sm leading-relaxed text-muted-foreground">{copy.sceneHint}</p>
-          </div>
-          <div className="space-y-1 border-t pt-3">
-            <p className="text-sm font-semibold">{copy.costumeLabel}</p>
-            <p className="text-sm leading-relaxed text-muted-foreground">{copy.costumeHint}</p>
-          </div>
         </div>
 
         <div className="space-y-3">
@@ -413,9 +396,9 @@ export function DanceMaker({ copy, isAvailable = true, className = '', returnTo 
 
       <div className="flex flex-col gap-4 border-t bg-muted/30 p-5 sm:p-8 lg:border-l lg:border-t-0">
         <p className="text-base font-semibold">{copy.resultTitle}</p>
-        <div className="relative flex min-h-72 flex-1 items-center justify-center overflow-hidden rounded-2xl border bg-background p-4 sm:min-h-96" aria-busy={isWorking}>
+        <div className="relative flex aspect-video w-full shrink-0 items-center justify-center overflow-hidden rounded-2xl border bg-background p-4" aria-busy={isWorking}>
           {result ? (
-            <video src={result.videoUrl} poster={result.coverImageUrl} controls playsInline preload="metadata" aria-label={copy.videoLabel} className="max-h-[34rem] w-full rounded-lg object-contain">{copy.videoUnsupported}</video>
+            <video src={result.videoUrl} poster={result.coverImageUrl} controls playsInline preload="metadata" aria-label={copy.videoLabel} className="absolute inset-0 h-full w-full rounded-2xl object-contain">{copy.videoUnsupported}</video>
           ) : (
             <div className="flex max-w-xs flex-col items-center gap-4 text-center">
               {isWorking ? <LoaderCircle aria-hidden="true" className="h-9 w-9 animate-spin text-primary" /> : <Film aria-hidden="true" className="h-10 w-10 text-muted-foreground/45" />}

@@ -17,7 +17,7 @@
 
 3. **确认 R2 并配置正式媒体域名。** 现有桶为 `rumpelstiltskin-ai-uploads`，绑定名 `R2_BUCKET`；当前公开地址为 `https://pub-7344a28ff09f475d9e99f883230bb927.r2.dev`。在 R2 → 该桶 → Settings → Custom Domains 连接一个媒体域名，再把 `wrangler.jsonc` 的 `R2_PUBLIC_URL` 改为其 HTTPS 地址。不要用 CNAME 直接指向 `r2.dev`。Cloudflare 将 `r2.dev` 定义为限流的开发地址，正式流量应使用自定义域名。[官方说明](https://developers.cloudflare.com/r2/buckets/public-buckets/)
 
-   验证两个固定对象在新地址下可访问：`references/rumpelstiltskin-v2/princess-default.png`、`references/rumpelstiltskin-v2/barn-scene.png`。这里的 R2 地址是公开对象地址，持有链接的人可以访问照片；按隐私页说明处理用户删除请求，不要把公开桶描述成私有存储。
+   验证两个固定对象在新地址下可访问：`references/rumpelstiltskin-v2/princess-default-v2.png`、`references/rumpelstiltskin-v2/barn-scene.png`。这里的 R2 地址是公开对象地址，持有链接的人可以访问照片；按隐私页说明处理用户删除请求，不要把公开桶描述成私有存储。
 
 4. **准备生产密钥。** 在 `apps/tanstack-app/.env.production.local` 中准备 `AUTODL_API_KEY` 和独立的生产 `BETTER_AUTH_SECRET`（至少 32 字符的随机值）。此文件受现有忽略规则保护，不要提交或贴到聊天里。不要把包含本地 URL 的 `.dev.vars` 整份当成生产配置；它也不会自动变成云端密钥。生产 `APP_BASE_URL`、`BETTER_AUTH_URL` 已在 `wrangler.jsonc` 设置为主域。
 

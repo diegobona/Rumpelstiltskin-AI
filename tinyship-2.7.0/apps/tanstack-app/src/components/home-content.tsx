@@ -21,7 +21,7 @@ export function HomeContent({ relatedTools = moreAiVideoTools }: HomeContentProp
         <ol className="step-grid">
           {homeCopy.how.steps.map((step, index) => (
             <li className="step-card" key={step.title}>
-              <img src={step.image} alt={step.alt} width={640} height={400} loading="lazy" decoding="async" />
+              <img src={step.image} alt={step.alt} width={960} height={640} loading="lazy" decoding="async" />
               <div className="step-copy">
                 <h3><span className="step-number" aria-hidden="true">{index + 1}</span>{step.title}</h3>
                 <p>{step.body}</p>

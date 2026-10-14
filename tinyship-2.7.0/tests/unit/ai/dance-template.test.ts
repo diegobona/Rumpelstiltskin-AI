@@ -9,7 +9,7 @@ describe('three-image dance template', () => {
     const options = createDanceVideoOptions({ danceTemplate: 'rumpelstiltskin-v2', dancerImageUrl }, `${publicUrl}/`)
     expect(options.referenceImageUrls).toEqual([
       dancerImageUrl,
-      `${publicUrl}/references/rumpelstiltskin-v2/princess-default.png`,
+      `${publicUrl}/references/rumpelstiltskin-v2/princess-default-v2.png`,
       `${publicUrl}/references/rumpelstiltskin-v2/barn-scene.png`,
     ])
     expect(options).toMatchObject({ provider: 'autodl', model: 'minimax-h3', duration: 10, size: '768p横' })

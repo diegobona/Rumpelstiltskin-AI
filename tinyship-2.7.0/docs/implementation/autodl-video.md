@@ -246,3 +246,18 @@ Both previously absent keys returned HTTP 200 for public HEAD and GET after
 upload, with `Content-Type: image/png`. Downloaded bytes and SHA-256 hashes match
 the local originals exactly. This asset upload did not deploy or restart the
 website, create a bucket, modify secrets, or submit a paid video generation.
+
+### Restored default princess (14 October 2026)
+
+The current default is now `princess-default-v2.png`, restored with the built-in
+image editor from the original attachment. Facial identity, blonde hair, the
+frightened expression and hand pose were retained; player controls and the
+bottom playback gradient were removed. The original file remains for rollback.
+The maker, examples and AutoDL default reference now use this versioned filename.
+
+Public object: `https://pub-7344a28ff09f475d9e99f883230bb927.r2.dev/references/rumpelstiltskin-v2/princess-default-v2.png`.
+Dimensions: 1589 x 990; PNG size: 815573 bytes.
+SHA-256: `443168dd78adad65278bfc6a0105ee05a2091a14729e8844267f93dd94bfeb28`.
+Public GET returned HTTP 200 and matched the local file byte for byte.
+Prompt and source: `docs/implementation/princess-reference-edit.json`.
+No paid video job was submitted.
