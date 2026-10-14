@@ -1,0 +1,11 @@
+.tool-page .tool-step-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tool-page .tool-step-grid .step-copy { padding: 24px; }
+.tool-page .tool-dance-appearance { display: grid; grid-template-columns: 1.3fr 1fr; align-items: start; gap: 36px; }
+.tool-page .tool-prose p { margin: 0 0 20px; color: #5f6a5f; font-size: 16px; line-height: 1.8; }
+.tool-page .tool-page-navigation { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 36px; font-size: 15px; line-height: 1.6; }
+.tool-page .tool-page-navigation a { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 640px) {
+  .tool-page .tool-step-grid, .tool-page .tool-dance-appearance { grid-template-columns: 1fr; }
+  .tool-page .tool-dance-appearance { gap: 16px; }
+  .tool-page .tool-step-grid .step-copy { padding: 20px; }
+}
